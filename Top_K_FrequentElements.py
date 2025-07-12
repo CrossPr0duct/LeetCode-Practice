@@ -10,5 +10,5 @@ class Solution:
 
         # sort by decending
         # need to get the hist as items which is {key:val}
-        result = sorted(hist.items(),key=lambda x:x[1],reverse=True)
-        return [x[0] for x in result[:k]]
+        result = sorted(hist.items(),key=lambda x:x[1],reverse=True) # reverse means decending or largest first.
+        return [x[0] for x in result[:k]] # peel off k results and then pick the number.

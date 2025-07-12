@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 class Solution:
-    
+
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
         # base case 
@@ -14,7 +14,7 @@ class Solution:
         final_result = defaultdict(list)
 
         for word in strs:
-            str_hash = ''.join(sorted(word)) # sorted returns an list then we join it back.
+            str_hash = ''.join(sorted(word)) # sorted returns an list then we join it back to be a string.
 
             final_result[str_hash].append(word) 
 
